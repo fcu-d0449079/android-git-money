@@ -1,5 +1,6 @@
 package com.example.user.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button bt_login;
+    EditText et_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +25,21 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        bt_login= (Button)findViewById(R.id.bt_login);
+        bt_login.setOnClickListener(money);
+        et_user=(EditText)findViewById(R.id.et_user);
+
     }
+
+    private View.OnClickListener money = new View.OnClickListener() {
+        public void onClick(View v) {
+            String user=et_user.getText().toString();
+            Intent intent = new Intent();
+            intent.setClass(MainActivity.this, MoneyActivity.class);
+            startActivity(intent);
+            Toast.makeText(MainActivity.this,"歡迎 "+user+"使用本程式",Toast.LENGTH_SHORT).show();
+        }
+    };
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

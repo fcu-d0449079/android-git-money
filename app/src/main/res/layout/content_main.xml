@@ -38,21 +38,20 @@
                 android:id="@+id/imageView"
                 android:layout_width="175dp"
                 android:layout_height="248dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
                 app:layout_constraintBottom_toTopOf="@+id/請輸入用戶名稱:"
                 app:layout_constraintTop_toBottomOf="@+id/歡迎"
                 app:srcCompat="@drawable/money"
-                tools:layout_editor_absoluteX="89dp"
-                android:layout_below="@+id/歡迎"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="12dp" />
+                tools:layout_editor_absoluteX="89dp" />
 
             <TextView
                 android:id="@+id/請輸入用戶名稱:"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/et_user"
+                android:layout_below="@+id/imageView"
                 android:layout_centerHorizontal="true"
-                android:layout_marginBottom="21dp"
+                android:layout_marginTop="29dp"
                 android:layout_weight="1"
                 android:text="請輸入用戶名稱:"
                 app:layout_constraintBottom_toTopOf="@+id/et_user"
@@ -62,9 +61,6 @@
                 android:id="@+id/et_user"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/bt_login"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="25dp"
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_weight="1"
@@ -72,22 +68,25 @@
                 android:inputType="textPersonName"
                 app:layout_constraintBottom_toTopOf="@+id/bt_login"
                 app:layout_constraintLeft_toLeftOf="@+id/imageView"
-                app:layout_constraintRight_toRightOf="@+id/imageView" />
+                app:layout_constraintRight_toRightOf="@+id/imageView"
+                android:layout_below="@+id/請輸入用戶名稱:"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
 
             <Button
                 android:id="@+id/bt_login"
                 android:layout_width="336dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:layout_marginBottom="13dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="0dp"
                 android:layout_weight="1"
                 android:text="進入APP"
                 app:layout_constraintLeft_toLeftOf="@+id/歡迎"
                 app:layout_constraintRight_toRightOf="@+id/歡迎"
-                tools:layout_editor_absoluteY="400dp" />
+                tools:layout_editor_absoluteY="400dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="35dp" />
 
         </RelativeLayout>
 
