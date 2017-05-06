@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 public class MoneyActivity extends AppCompatActivity {
 
-    //TextView name;
+    TextView name;
     //EditText et_name;
     //String st_name;
 
