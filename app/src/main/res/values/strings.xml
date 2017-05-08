@@ -2,5 +2,9 @@
     <string name="app_name">My Application</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_money">MoneyActivity</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">理財</string>
+    <string name="title_statistics">統計</string>
+    <string name="title_settings">設定</string>
 
 </resources>

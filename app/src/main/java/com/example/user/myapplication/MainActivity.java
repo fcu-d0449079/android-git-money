@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        money_user = (TextView)findViewById(R.id.money_user);
+        //money_user = (TextView)findViewById(R.id.money_user);
         bt_login= (Button)findViewById(R.id.bt_login);
         bt_login.setOnClickListener(money);
         et_user=(EditText)findViewById(R.id.et_user);
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             String user=et_user.getText().toString();
             Intent intent = new Intent();
-            intent.setClass(MainActivity.this, MoneyActivity.class);
+            intent.setClass(MainActivity.this, BottomActivity.class);
             startActivity(intent);
             Toast.makeText(MainActivity.this,"歡迎 "+user+"使用本程式",Toast.LENGTH_SHORT).show();
            //money_user.setText("用戶"+user);
