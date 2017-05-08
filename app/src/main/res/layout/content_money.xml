@@ -10,7 +10,7 @@
 
 
     <Button
-        android:id="@+id/et_input"
+        android:id="@+id/btn_input"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="160dp"
         android:layout_height="160dp"
@@ -32,7 +32,7 @@
         android:elevation="0dp"
         android:text="預算控管"
         android:textSize="30sp"
-        android:layout_below="@+id/et_input"
+        android:layout_below="@+id/btn_input"
         android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
