@@ -10,57 +10,29 @@
 
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/et_input"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="85dp"
         android:background="#0000FF"
         android:elevation="0dp"
         android:text="記帳"
-        android:textSize="30sp"/>
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button2" />
 
     <Button
         android:id="@+id/button2"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginEnd="18dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginEnd="26dp"
         android:background="?android:attr/colorActivatedHighlight"
         android:elevation="0dp"
         android:text="預算控管"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/button3"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_alignBottom="@+id/button4"
-        android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/button4"
-        android:layout_marginStart="16dp"
-        android:background="?android:attr/textColorLink"
-        android:elevation="0dp"
-        android:text="總覽"
-        android:textSize="30sp" />
-
-    <Button
-        android:id="@+id/button4"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_alignStart="@+id/button2"
-        android:layout_below="@+id/button1"
-        android:layout_marginTop="49dp"
-        android:background="@android:color/holo_green_dark"
-        android:elevation="0dp"
-        android:text="App設定"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_below="@+id/et_input"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
