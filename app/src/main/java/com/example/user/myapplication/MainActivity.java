@@ -2,8 +2,6 @@ package com.example.user.myapplication;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -11,12 +9,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     Button bt_login;
     EditText et_user;
+    TextView money_user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        money_user = (TextView)findViewById(R.id.money_user);
         bt_login= (Button)findViewById(R.id.bt_login);
         bt_login.setOnClickListener(money);
         et_user=(EditText)findViewById(R.id.et_user);
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             intent.setClass(MainActivity.this, MoneyActivity.class);
             startActivity(intent);
             Toast.makeText(MainActivity.this,"歡迎 "+user+"使用本程式",Toast.LENGTH_SHORT).show();
+           //money_user.setText("用戶"+user);
         }
     };
 
