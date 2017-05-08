@@ -26,9 +26,9 @@ public class BottomActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_statistics:
                     mTextMessage.setText(R.string.title_statistics);
-                    Intent intent1 = new Intent();
-                    intent1.setClass(BottomActivity.this, StatisticsActivity.class);
-                    startActivity(intent1);
+                    intent = new Intent();
+                    intent.setClass(BottomActivity.this, StatisticsActivity.class);
+                    startActivity(intent);
                     return true;
                 case R.id.navigation_settings:
                     //mTextMessage.setText(R.string.title_settings);
