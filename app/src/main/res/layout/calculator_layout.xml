@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.user.myapplication.BottomActivity">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:rowCount="6" >
+
+
+                    <!--android:text數字buttom暫時以符號代替-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <EditText
+                android:id="@+id/cal_calculation_input"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:enabled="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="numberDecimal"
+                android:longClickable="false"
+                android:maxLength="10"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Button
+                android:id="@+id/cal_btn_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="1dp"
+                android:layout_weight="3"
+                android:background="@color/colorbackground_cal"
+                android:text="C"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@android:color/holo_red_light" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/cal_btn_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="7"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="8"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="9"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="+"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/cal_btn_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="4"
+                android:background="@color/colorbackground_cal"/>
+
+
+            <Button
+                android:id="@+id/cal_btn_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="5"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="6"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="-"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/cal_btn_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="3"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="*"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <Button
+                android:id="@+id/cal_btn_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="."
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="0"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_equal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="="
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+
+            <Button
+                android:id="@+id/cal_btn_divid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:text="/"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@color/colorbackground_cal"/>
+        </LinearLayout>
+
+
+
+
+    </GridLayout>
+
+
+</LinearLayout>
