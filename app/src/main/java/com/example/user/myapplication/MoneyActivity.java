@@ -28,7 +28,7 @@ public class MoneyActivity extends AppCompatActivity {
 
         public void onClick(View v){
             Intent intent = new Intent();
-            intent.setClass(MoneyActivity.this,inputmoney.class);
+            intent.setClass(MoneyActivity.this,input_money.class);
             startActivity(intent);
             Toast.makeText(MoneyActivity.this,"使用記帳功能",Toast.LENGTH_SHORT).show();
 

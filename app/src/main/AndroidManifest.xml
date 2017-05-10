@@ -28,6 +28,14 @@
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".input_money"
+            android:label="@string/title_activity_input_money"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".statisticsAct"
+            android:label="@string/title_activity_statistics"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
