@@ -15,7 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Button bt_login;
-    EditText et_user;
+    public EditText et_user;
     TextView money_user;
 
     @Override
@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
             String user=et_user.getText().toString();
             Intent intent = new Intent();
             intent.setClass(MainActivity.this, BottomActivity.class);
+            Bundle bundle = new Bundle();
+            bundle.putString("et_user",et_user.getText().toString());
+            intent.putExtras(bundle);
             startActivity(intent);
             Toast.makeText(MainActivity.this,"歡迎 "+user+"使用本程式",Toast.LENGTH_SHORT).show();
            //money_user.setText("用戶"+user);
