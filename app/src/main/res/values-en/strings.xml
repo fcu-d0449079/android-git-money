@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Financial management / Accounting</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_money">MoneyActivity</string>
+    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_home">Financial management </string>
+    <string name="title_statistics">Statistics</string>
+    <string name="title_settings">Setting</string>
+    <string name="title_activity_settings">設定</string>
+    <string name="title_activity_input_money">input_money</string>
+    <string name="title_activity_statistics">statisticsAct</string>
+
+
+</resources>
