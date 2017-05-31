@@ -24,13 +24,11 @@ public class BottomActivity extends AppCompatActivity {
 
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    mTextMessage.setText(R.string.title_home);
                     Intent intent = new Intent();
                     intent.setClass(BottomActivity.this, MoneyActivity.class);
                     startActivity(intent);
                     return true;
                 case R.id.navigation_statistics:
-                    mTextMessage.setText(R.string.title_statistics);
                     intent = new Intent();
                     intent.setClass(BottomActivity.this, statisticsAct.class);
                     startActivity(intent);
