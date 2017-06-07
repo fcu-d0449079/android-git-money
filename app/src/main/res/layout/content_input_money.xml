@@ -39,17 +39,10 @@
                 android:id="@+id/total"
                 android:layout_width="200dp"
                 android:layout_height="40dp"
-                android:text="TextView"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true" />
-
-            <TextView
-                android:id="@+id/show"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:text="TextView" />
+                android:text="0"
+                android:textSize="30dp" />
 
             <TextView
                 android:id="@+id/textView"
@@ -100,7 +93,7 @@
                         android:text="3" />
 
                     <Button
-                        android:id="@+id/bta"
+                        android:id="@+id/btplus"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="+" />
@@ -129,7 +122,7 @@
                         android:text="6" />
 
                     <Button
-                        android:id="@+id/btb"
+                        android:id="@+id/btsub"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="-" />
@@ -158,7 +151,7 @@
                         android:text="9" />
 
                     <Button
-                        android:id="@+id/btc"
+                        android:id="@+id/btmul"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="*" />
@@ -172,6 +165,9 @@
                         android:id="@+id/btAC"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_above="@+id/button"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="151dp"
                         android:text="AC" />
 
                     <Button
@@ -181,13 +177,13 @@
                         android:text="0" />
 
                     <Button
-                        android:id="@+id/bt"
+                        android:id="@+id/btequ"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="=" />
 
                     <Button
-                        android:id="@+id/btd"
+                        android:id="@+id/btdiv"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="/" />
