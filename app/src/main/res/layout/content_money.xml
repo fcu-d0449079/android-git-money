@@ -9,30 +9,40 @@
     tools:showIn="@layout/activity_money">
 
 
-    <Button
-        android:id="@+id/btn_input"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginTop="85dp"
-        android:background="#0000FF"
-        android:elevation="0dp"
-        android:text="記帳"
-        android:textSize="30sp"
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/button2" />
+        android:layout_alignParentStart="true">
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="160dp"
-        android:layout_height="160dp"
-        android:layout_marginEnd="26dp"
-        android:background="?android:attr/colorActivatedHighlight"
-        android:elevation="0dp"
-        android:text="預算控管"
-        android:textSize="30sp"
-        android:layout_below="@+id/btn_input"
-        android:layout_alignParentEnd="true" />
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btn_input"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/button_1"
+            android:elevation="0dp"
+            android:textColor="#FFBB66"
+            android:text="預算控管"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_input"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/button_2"
+            android:elevation="0dp"
+            android:textColor="#00AA55"
+            android:text="記帳"
+            android:textSize="30sp" />
+    </RelativeLayout>
 
 </RelativeLayout>

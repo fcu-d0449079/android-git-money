@@ -8,272 +8,156 @@
     tools:context="com.example.user.myapplication.statisticsAct"
     tools:showIn="@layout/activity_statistics2">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:context="com.example.user.myapplication.StatisticsActivity"
-        tools:layout_editor_absoluteY="8dp"
-        tools:layout_editor_absoluteX="8dp">
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
 
-        <RelativeLayout
-            android:layout_width="360dp"
-            android:layout_height="136dp"
-            tools:layout_editor_absoluteX="12dp"
-            tools:layout_editor_absoluteY="84dp">
-
-            <LinearLayout
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:orientation="vertical"
-                android:weightSum="1">
-
-                <TextView
-                    android:id="@+id/expenditure1"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text="$0"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income1"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary1"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <Button
-                android:id="@+id/bt4"
+                android:id="@+id/today"
                 android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:background="@android:color/holo_blue_dark"
-                android:text="今日"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:textSize="30sp"
+                android:layout_weight="0.17"
+                android:background="@drawable/button_one"
+                android:textColor="#000000"
+                android:text="今日" />
 
             <LinearLayout
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/bt4"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/expenditure"
+                    android:id="@+id/textView4"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text=" 支出"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text=" 收入"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text=" 總結"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="總計" />
             </LinearLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="360dp"
-            android:layout_height="136dp"
-            tools:layout_editor_absoluteX="12dp"
-            tools:layout_editor_absoluteY="220dp">
 
             <LinearLayout
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/expenditure1"
+                    android:id="@+id/textView13"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text="$0"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income1"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary1"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="0" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <Button
-                android:id="@+id/bt4"
+                android:id="@+id/month"
                 android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:background="@android:color/holo_orange_dark"
-                android:text="本月"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:textSize="30sp"
+                android:background="@drawable/button_two"
+                android:textColor="#000000"
+                android:text="本月" />
 
             <LinearLayout
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/bt4"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:layout_weight="0.17"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/expenditure"
+                    android:id="@+id/textView14"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text=" 支出"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text=" 收入"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text=" 總結"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="總計" />
             </LinearLayout>
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="360dp"
-            android:layout_height="136dp"
-            tools:layout_editor_absoluteX="12dp"
-            tools:layout_editor_absoluteY="356dp">
 
             <LinearLayout
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_centerVertical="true"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:layout_weight="0.17"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/expenditure1"
+                    android:id="@+id/textView15"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text="$0"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income1"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary1"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text="$0"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="0" />
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
 
             <Button
-                android:id="@+id/bt4"
+                android:id="@+id/year"
                 android:layout_width="120dp"
-                android:layout_height="120dp"
-                android:layout_alignParentStart="true"
-                android:layout_centerVertical="true"
-                android:background="@android:color/holo_purple"
-                android:text="今年"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:textSize="30sp"
+                android:background="@drawable/button_three"
+                android:textColor="#000000"
+                android:text="今年" />
 
             <LinearLayout
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
-                android:layout_centerVertical="true"
-                android:layout_toEndOf="@+id/bt4"
-                android:orientation="vertical"
-                android:weightSum="1">
+                android:layout_weight="0.17"
+                android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/expenditure"
+                    android:id="@+id/textView16"
                     android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="0.59"
-                    android:text=" 支出"
-                    android:textColor="#FF0000"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/income"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text=" 收入"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
-
-                <TextView
-                    android:id="@+id/sumary"
-                    android:layout_width="120dp"
-                    android:layout_height="40dp"
-                    android:text=" 總結"
-                    android:textColor="#00BBFF"
-                    android:textSize="38sp" />
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="總計" />
             </LinearLayout>
 
-        </RelativeLayout>
-    </android.support.constraint.ConstraintLayout>
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.17"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#000000"
+                    android:text="0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
