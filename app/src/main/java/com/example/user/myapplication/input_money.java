@@ -33,7 +33,7 @@ public class input_money extends AppCompatActivity {
         public void onClick (View v){
         {
             if (v.getId() == R.id.bt0) {
-                now =  now*10 + 0;
+                now =  now*10;
             } else if (v.getId() == R.id.bt1) {
                 now = now*10 + 1;
             } else if (v.getId() == R.id.bt2) {
@@ -123,6 +123,7 @@ public class input_money extends AppCompatActivity {
         btequ = (Button) findViewById(R.id.btequ);
         total = (TextView) findViewById(R.id.total);
 
+        bt0.setOnClickListener(click);
         bt1.setOnClickListener(click);
         bt2.setOnClickListener(click);
         bt3.setOnClickListener(click);
