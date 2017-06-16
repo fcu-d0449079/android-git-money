@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class input_money extends AppCompatActivity {
@@ -14,6 +15,9 @@ public class input_money extends AppCompatActivity {
     String abc;
     Button bt0, bt1, bt2, bt3, bt4, bt5, bt6, bt7, bt8, bt9, btplus, btsub, btdiv, btmul, btAC,btequ;
     TextView total;
+    private EditText edDate;
+    private EditText edInfo;
+    private EditText edAmount;
 
 
     @Override
@@ -22,10 +26,17 @@ public class input_money extends AppCompatActivity {
         setContentView(R.layout.activity_input_money);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
        find();
+        findViews();
     }
+    public void add(View v){
 
+    }
+    private void findViews(){
+        edAmount = (EditText)findViewById(R.id.ed_amount);
+        edDate = (EditText)findViewById(R.id.ed_date);
+        edInfo = (EditText)findViewById(R.id.ed_info);
+    }
     private Button.OnClickListener click = new Button.OnClickListener()
 
     {
