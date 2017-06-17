@@ -9,6 +9,7 @@
     <string name="title_activity_settings">設定</string>
     <string name="title_activity_input_money">input_money</string>
     <string name="title_activity_statistics">statisticsAct</string>
+    <string name="title_activity_finance">FinanceActivity</string>
 
 
 </resources>

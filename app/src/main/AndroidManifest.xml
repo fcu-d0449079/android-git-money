@@ -36,7 +36,12 @@
         <activity
             android:name=".statisticsAct"
             android:label="@string/title_activity_statistics"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FinanceActivity"
+            android:label="@string/title_activity_finance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddActivity"></activity>
     </application>
 
 </manifest>

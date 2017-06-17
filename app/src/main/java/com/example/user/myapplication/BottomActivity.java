@@ -25,12 +25,12 @@ public class BottomActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     Intent intent = new Intent();
-                    intent.setClass(BottomActivity.this, MoneyActivity.class);
+                    intent.setClass(BottomActivity.this, AddActivity.class);
                     startActivity(intent);
                     return true;
                 case R.id.navigation_statistics:
                     intent = new Intent();
-                    intent.setClass(BottomActivity.this, statisticsAct.class);
+                    intent.setClass(BottomActivity.this, FinanceActivity.class);
                     startActivity(intent);
                     return true;
                 case R.id.navigation_settings:
