@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">Financial management / Accounting</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_money">MoneyActivity</string>
-    <string name="title_activity_bottom">BottomActivity</string>
+    <string name="title_activity_money">Financial management / Accounting</string>
+    <string name="title_activity_bottom">Financial management / Accounting</string>
     <string name="title_home">Financial management </string>
     <string name="title_statistics">Statistics</string>
     <string name="title_settings">Setting</string>
