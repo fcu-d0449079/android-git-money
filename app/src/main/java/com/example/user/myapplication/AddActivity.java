@@ -49,6 +49,13 @@ public class AddActivity extends AppCompatActivity {
                 return false;
             }
         });
+        edAmount.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v,MotionEvent event) {
+                edAmount.setInputType(InputType.TYPE_NULL);
+                return false;
+            }
+        });
     }
 
     View.OnClickListener edDateListener=new View.OnClickListener() {
