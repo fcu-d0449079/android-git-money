@@ -33,27 +33,40 @@ public class SettingsActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        switch (position){
+        AlertDialog.Builder ad = new AlertDialog.Builder(this);
+        DialogInterface.OnClickListener listener =
+                new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface di, int i) {
+
+                    }
+                };
+        switch (position) {
             case 0:
-                AlertDialog.Builder ad = new AlertDialog.Builder(this);
+                // AlertDialog.Builder ad = new AlertDialog.Builder(this);
                 ad.setTitle("關於本程式");
-                ad.setMessage("作者：戴毓辰");
-
-                DialogInterface.OnClickListener listener =
-                        new DialogInterface.OnClickListener(){
-                            public void onClick(DialogInterface di,int i){
-
-                            }
-                        };
-                ad.setPositiveButton("確定",listener);
+                ad.setMessage("作者：\n戴毓辰\n莊承恩\n王建雄\n黃煌凱");
+                ad.setPositiveButton("確定", listener);
                 ad.show();
                 break;
+
+            case 1:
+
+                ad.setTitle("聯絡我們");
+                ad.setMessage("電話：091234567\n地址：407台中市西屯區文華路100號");
+                ad.setPositiveButton("確定", listener);
+                ad.show();
+                break;
+
+            case 2:
+
+                ad.setTitle("贊助我們");
+                ad.setMessage("金融機構代號：700002\n帳號：XXXXXXX-XXXXXXX");
+                ad.setPositiveButton("確定", listener);
+                ad.show();
+
 
         }
 
 
     }
-
-
-
 }
