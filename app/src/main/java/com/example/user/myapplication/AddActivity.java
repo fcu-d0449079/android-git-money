@@ -4,7 +4,9 @@ import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
@@ -39,6 +41,14 @@ public class AddActivity extends AppCompatActivity {
         edInfo = (EditText) findViewById(R.id.ed_info);
         edAmount = (EditText) findViewById(R.id.ed_amount);
         edDate.setOnClickListener(edDateListener);
+        edDate.setOnClickListener(edDateListener);
+        edDate.setOnTouchListener(new View.OnTouchListener(){
+            @Override
+            public boolean onTouch(View v,MotionEvent event) {
+                edDate.setInputType(InputType.TYPE_NULL);
+                return false;
+            }
+        });
     }
 
     View.OnClickListener edDateListener=new View.OnClickListener() {
