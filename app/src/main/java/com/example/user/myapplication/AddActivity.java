@@ -1,13 +1,19 @@
 package com.example.user.myapplication;
 
+import android.app.DatePickerDialog;
 import android.content.ContentValues;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class AddActivity extends AppCompatActivity {
     int now, last = 0;
@@ -17,6 +23,7 @@ public class AddActivity extends AppCompatActivity {
     private EditText edInfo;
     private EditText edAmount;
     private MyDBHelper helper;
+    private Calendar m_Calendar = Calendar.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +38,34 @@ public class AddActivity extends AppCompatActivity {
         edDate = (EditText) findViewById(R.id.ed_date);
         edInfo = (EditText) findViewById(R.id.ed_info);
         edAmount = (EditText) findViewById(R.id.ed_amount);
+        edDate.setOnClickListener(edDateListener);
     }
+
+    View.OnClickListener edDateListener=new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            DatePickerDialog dialog = new DatePickerDialog(AddActivity.this,
+                    datepicker,
+                    m_Calendar.get(Calendar.YEAR),
+                    m_Calendar.get(Calendar.MONTH),
+                    m_Calendar.get(Calendar.DAY_OF_MONTH));
+            dialog.show();
+        }
+    };
+
+    DatePickerDialog.OnDateSetListener datepicker = new DatePickerDialog.OnDateSetListener()
+    {
+        @Override
+        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth)
+        {
+            m_Calendar.set(Calendar.YEAR, year);
+            m_Calendar.set(Calendar.MONTH, monthOfYear);
+            m_Calendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+            String myFormat = "yyyy/MM/dd";
+            SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.TAIWAN);
+            edDate.setText(sdf.format(m_Calendar.getTime()));
+        }
+    };
 
     public void add(View v){
 
